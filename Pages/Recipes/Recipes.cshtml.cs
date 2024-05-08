@@ -37,9 +37,9 @@ public class RecipeModel : PageModel
     {
         return Page();
     }
-    _context.Recipes.Add(Recipe);
+    _context.Recipes.Add(Recipe);
     _context.SaveChanges();
-    return RedirectToPage("./Index");
+    return RedirectToPage("./Index");
 }
 
 }
