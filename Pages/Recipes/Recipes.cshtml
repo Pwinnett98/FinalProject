@@ -13,7 +13,28 @@
 {
     <p>@Html.DisplayFor(modelItem => r.Title)</p>
 }
+<select asp-items="Model.RecipeDropDown" class="form-control">
+	<option value="">-- Select Recipe--</option>
+</select>
 </div>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Recipe.Title" class="control-label"></label>
+        <input asp-for="Recipe.Title" class="form-control" />
+        <span asp-validation-for="Recipe.Title" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
+
+<span asp-validation-for="Recipe.Title" class="text-danger"></span>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
 
 
 
