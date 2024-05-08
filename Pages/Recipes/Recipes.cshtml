@@ -7,6 +7,12 @@
 
 <div>
     <h2> This is the recipe page </h2>
+    <hr />
+<p>List of Recipes:</p>
+@foreach (var r in Model.Recipes)
+{
+    <p>@Html.DisplayFor(modelItem => r.Title)</p>
+}
 </div>
 
 
