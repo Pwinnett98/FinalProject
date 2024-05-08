@@ -11,7 +11,7 @@ namespace FinalProject.Migrations
 {
     [DbContext(typeof(RecipeContext))]
     [Migration("20240508200059_final")]
-    partial class final
+    partial class Final
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

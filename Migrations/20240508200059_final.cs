@@ -5,7 +5,7 @@
 namespace FinalProject.Migrations
 {
     /// <inheritdoc />
-    public partial class final : Migration
+    public partial class Final : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
