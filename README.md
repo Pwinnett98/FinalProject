@@ -1,6 +1,7 @@
 # FinalProject
 Final Project for Advanced Buisness Programming 
 Your Name: 
+Paige Winnett
 
 You will create your own GitHub repository. There is no GitHub Classroom link.
 o On GitHub.com click New Repository. Give your repository a unique name.
