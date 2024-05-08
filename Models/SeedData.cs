@@ -197,27 +197,6 @@ using Microsoft.EntityFrameworkCore;
                         Author="Paige W"
                     }
                 );
-            }
-
-            using (var context = new UserContext(
-                serviceProvider.GetRequiredService<DbContextOptions<UserContext>>()))
-            {
-                
-                if (context.Users.Any())
-                {
-                    return; 
-                }
-                
-                context.Users.AddRange(
-                    new User
-                    {
-                      UserId ="1",
-                        FirstName="Paige",
-                        LastName="W",
-                        Email="pmwinnett1@buffs.wtamu.edu"
-                    }
-                );
-                
                 context.SaveChanges();
             }
         }

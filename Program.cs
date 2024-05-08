@@ -8,8 +8,6 @@ builder.Services.AddRazorPages();
 
 builder.Services.AddDbContext<RecipeContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("RecipeContext")));
-builder.Services.AddDbContext<UserContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("UserContext")));
 
 var app = builder.Build();
 
